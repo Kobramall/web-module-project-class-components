@@ -3,12 +3,12 @@ import ToDo from './Todo'
 
 const TodoList = props =>  {
 
-
+console.log(props.toggleItem)
 
     return (
       <div>
         {props.list.map(item => (
-          <ToDo toggle={props.toggleItem} key={item.id} item={item}/>
+          <ToDo toggle={props.toggle} key={item.id} item={item}/>
         ))}
         
       

@@ -3,7 +3,7 @@ import ToDo from './Todo'
 
 const TodoList = props =>  {
 
-
+console.log(props.toggleItem)
 
     return (
       <div>

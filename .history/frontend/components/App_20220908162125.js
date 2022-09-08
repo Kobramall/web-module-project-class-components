@@ -28,19 +28,13 @@ export default class App extends React.Component {
         return item;
        }) })
   }
-
-  clearPurchased = () => {
-    this.setState({...this.state, list: this.state.list.filter(item =>{
-      if(item.done === false) return item
-    })})
-  }
   
   render() {
     return (
       <div>
         <h1>ToDo App</h1>
         <ToDoList toggleItem={this.toggleItem} addItem={this.addItem} list={this.state.list} />
-        <Form clear={this.clearPurchased} addItem={this.addItem} item={this.state}/>
+        <Form addItem={this.addItem} item={this.state}/>
       </div>
     )
   }

@@ -27,7 +27,7 @@ submitForm = e =>{
          <input type="text" name="item" value={this.state.item} onChange={this.handleChanges}/>
          <button>add</button>
         </form> 
-        <button onClick={this.props.clear}>Clear</button>
+        <button >Clear</button>
       </div>
     )
   }

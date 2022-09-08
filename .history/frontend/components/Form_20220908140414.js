@@ -15,7 +15,7 @@ handleChanges = e => {
   })
 }
 
-submitForm = e =>{
+sumbitForm = e =>{
   e.preventDefault();
   this.props.addItem(e, this.state.item);
 }
@@ -23,11 +23,11 @@ submitForm = e =>{
   render() {
     return (
       <div>
-        <form onSubmit ={this.submitForm}>
+        <form onSubmit ={}>
          <input type="text" name="item" value={this.state.item} onChange={this.handleChanges}/>
-         <button>add</button>
+         <button>submit</button>
         </form> 
-        <button onClick={this.props.clear}>Clear</button>
+        <button>Clear</button>
       </div>
     )
   }

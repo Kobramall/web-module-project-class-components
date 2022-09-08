@@ -31,7 +31,7 @@ export default class App extends React.Component {
 
   clearPurchased = () => {
     this.setState({...this.state, list: this.state.list.filter(item =>{
-      if(item.done === false) return item
+      if(!item.done) return item;
     })})
   }
   
